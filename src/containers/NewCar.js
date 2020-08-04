@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addCar } from '../action/Car';
+import { addCar } from '../actions/Car';
 import { connect } from 'react-redux';
 
 class NewCar extends Component {
@@ -32,7 +32,7 @@ class NewCar extends Component {
 
     render() {
         return (
-            
+           <div>Test</div> 
         )
     }
 }
