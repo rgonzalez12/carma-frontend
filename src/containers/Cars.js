@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import carCard from '../components/carCard'
+import carCard from '../components/CarCard'
 import { connect } from 'react-redux'
 import AddCarButton from '../components/AddCarButton'
 import { fetchCarListings, addCar} from '../actions/Car'
@@ -14,7 +14,7 @@ class Cars extends Component {
         return(
           <div className="cars-container">
             < AddButton name="List Your Car" addPodcast={this.props.addCar}/>
-            {this.props.cars.map((c, id) => < PodcastCard key={id} podcast={c} />)}
+            {this.props.cars.map((c, id) => < CarCard key={id} car={c} />)}
           </div>
         )
       }
