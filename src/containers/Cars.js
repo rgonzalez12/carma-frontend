@@ -13,7 +13,7 @@ class Cars extends Component {
     render() {
         return(
           <div className="cars-container">
-            < AddButton name="List Your Car" addPodcast={this.props.addCar}/>
+            < AddCarButton name="List Your Car" addPodcast={this.props.addCar}/>
             {this.props.cars.map((c, id) => < CarCard key={id} car={c} />)}
           </div>
         )
