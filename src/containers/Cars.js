@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import carCard from '../components/CarCard'
+import CarCard from '../components/CarCard'
 import { connect } from 'react-redux'
 import AddCarButton from '../components/AddCarButton'
 import { fetchCarListings, addCar} from '../actions/Car'
