@@ -19,7 +19,7 @@ class NewCar extends Component {
 
     handleChange = e => {
         this.setState({
-            [e.target.make]: e.target.value
+            [e.target.name]: e.target.value
         })
     }
 
@@ -32,7 +32,47 @@ class NewCar extends Component {
 
     render() {
         return (
-           <div>Test</div> 
+            <form id="new-car-form" onSubmit={this.handleSubmit}>
+            <br /> <br />
+            <h3>List Your Car</h3>
+            <label>Make</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.make} name="make"/>
+            <br /> <br />
+    
+            <label>Model</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.model} name="model"/>
+            <br /> <br />
+    
+            <label>Year</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.year} name="year"/>
+            <br /> <br />
+    
+            <label>Condition</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.condition} name="condition"/>
+            <br /> <br />
+
+            <label>Trim</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.trim} name="trim"/>
+            <br /> <br />
+
+            <label>Specs and Features</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.specs_and_features} name="specs_and_features"/>
+            <br /> <br />
+
+            <label>Summary</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.summary} name="summary"/>
+            <br /> <br />
+
+            <label>Image</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.image} name="image"/>
+            <br /> <br />
+
+            <label>Price</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.price} name="price"/>
+            <br /> <br />
+    
+            <input type="submit" value="Publish Listing" />
+          </form>
         )
     }
 }
