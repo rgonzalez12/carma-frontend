@@ -14,7 +14,9 @@ class NewCar extends Component {
         image: '',
         summary: '',
         upvote: 0,
-        downvote: 0
+        downvote: 0,
+        listing_owner: '',
+        contact_info: ''
     }
 
     handleChange = e => {
@@ -69,6 +71,14 @@ class NewCar extends Component {
 
             <label>Price</label> <br />
             <input type="text" onChange={this.handleChange} value={this.state.price} name="price"/>
+            <br /> <br />
+
+            <label>Listing Owner</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.listing_owner} name="listing_owner"/>
+            <br /> <br />
+
+            <label>Contact Info</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.contact_info} name="contact_info"/>
             <br /> <br />
     
             <input type="submit" value="Publish Listing" />
