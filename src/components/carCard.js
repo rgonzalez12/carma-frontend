@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { deleteListing } from 'src/actions/Car.js'
-import DeleteCarButton from './DeleteButton'
+import DeleteCarButton from './DeleteCarButton'
 
 const CarCard = ({car, deleteListing}) => {
   return (
