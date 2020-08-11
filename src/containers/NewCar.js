@@ -13,8 +13,6 @@ class NewCar extends Component {
         price: 0,
         image: '',
         summary: '',
-        upvote: 0,
-        downvote: 0,
         listing_owner: '',
         contact_info: ''
     }
