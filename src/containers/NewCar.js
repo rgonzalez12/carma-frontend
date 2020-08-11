@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addCar } from '../actions/Car';
+import { addCar } from '../actions';
 import { connect } from 'react-redux';
 
 class NewCar extends Component {

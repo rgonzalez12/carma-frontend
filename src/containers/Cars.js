@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import CarCard from '../components/CarCard'
 import { connect } from 'react-redux'
 import AddCarButton from '../components/AddCarButton'
-import { fetchCarListings, addCar} from '../actions/Car'
+import { fetchCarListings, addCar } from '../actions'
 
 class Cars extends Component {
 
