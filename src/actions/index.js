@@ -28,7 +28,7 @@ export const fetchCarListings = () => {
   export const deleteListing = carId => {
     return dispatch => {
       return fetch(`http://localhost:3000/cars/${carId}`, {
-        method: "DELETE",
+        method: 'DELETE',
         headers: {
           "Content-Type": "application/json"
         }
