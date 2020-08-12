@@ -24,7 +24,7 @@ class NewCar extends Component {
     }
 
     handleSubmit = e => {
-        e.preventDfault()
+        e.preventDefault()
         this.props.addCar(this.state)
         document.getElementById('new-listing-form').reset()
         this.props.history.push('/cars')
@@ -32,7 +32,7 @@ class NewCar extends Component {
 
     render() {
         return (
-            <form id="new-car-form" onSubmit={this.handleSubmit}>
+            <form id="new-listing-form" onSubmit={this.handleSubmit}>
             <br /> <br />
             <h3>List Your Car</h3>
             <label>Make</label> <br />

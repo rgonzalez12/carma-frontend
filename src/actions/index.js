@@ -11,7 +11,7 @@ export const fetchCarListings = () => {
   export const addCar = car => {
     return dispatch => {
       return fetch(`http://localhost:3000/cars`, {
-        method: "POST",
+        method: 'POST',
         headers: {
           "Content-Type": "application/json"
         },
