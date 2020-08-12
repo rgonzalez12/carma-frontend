@@ -1,9 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { deleteListing } from '../actions'
 import DeleteCarButton from './DeleteCarButton'
 
-const CarCard = ({car, deleteListing}) => {
+const CarCard = ({car}) => {
   return (
     <div className="car-card">
       <span id="car-make">
@@ -18,7 +16,7 @@ const CarCard = ({car, deleteListing}) => {
         <h3>Trim</h3>{car.trim}</span> <br />
       <span id="car-specs">
         <h3>Specs and Features</h3>{car.specs_and_features}</span> <br />
-      <h3>Image</h3><img src={car.image} alt="car"></img>
+        <h3>Image</h3><img src={car.image} alt="car"></img>
       <span id="car-summary">
         <h3>Summary</h3>{car.summary}</span> <br />
       <span id="car-price">
@@ -30,10 +28,10 @@ const CarCard = ({car, deleteListing}) => {
         <br></br>
 
 
-      < DeleteCarButton name="Delete Listing" car_id={car.id} deleteListing={deleteListing} />
+      < DeleteCarButton name="Delete Listing" car={car} />
       <br /><br />
     </div>
   )
 }
 
-export default connect(null, { deleteListing })(CarCard)
+export default CarCard

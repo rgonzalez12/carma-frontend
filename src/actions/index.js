@@ -35,7 +35,7 @@ export const fetchCarListings = () => {
       })
         .then(res => res.json())
         .then(carId => {
-          dispatch({type: "REMOVE_LISTING", payload: carId})
+          dispatch({type: "DELETE_LISTING", payload: carId})
         })
     }
   }

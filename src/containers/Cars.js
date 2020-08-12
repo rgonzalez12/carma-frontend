@@ -11,10 +11,11 @@ class Cars extends Component {
     }
 
     render() {
+      const carsList = this.props.cars.map((c, id) => < CarCard key={id} car={c} />)
         return(
           <div className="cars-container">
-            < AddCarButton name="List Your Car" addPodcast={this.props.addCar}/>
-            {this.props.cars.map((c, id) => < CarCard key={id} car={c} />)}
+            < AddCarButton name="List Your Car" addCar={this.props.addCar}/>
+            { carsList }
           </div>
         )
       }
@@ -33,4 +34,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cars)
+export default connect(mapStateToProps, { fetchCarListings, addCar })(Cars)

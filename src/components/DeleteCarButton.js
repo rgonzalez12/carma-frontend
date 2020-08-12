@@ -1,9 +1,11 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { deleteListing } from '../actions'
 
-const DeleteCarButton = props => {
+const DeleteCarButton = ({car, deleteListing}) => {
   return (
-    <button id="delete-button" onClick={() => props.deleteListing(props.car_id)}>{props.name}</button>
+    <button id="delete-button" onClick={() => deleteListing(car.id)}>Delete Listing</button>
   )
 }
 
-export default DeleteCarButton
+export default connect(null, { deleteListing })(DeleteCarButton)
