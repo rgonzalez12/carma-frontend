@@ -7,7 +7,7 @@ export default (state = [], action) => {
             return [...state, action.payload]
 
         case "DELETE_LISTING":
-            let updatedListings = state.filter(car => car.id !== action.payload)
+            let updatedListings = state.filter(car => car.id !== action.payload.id)
             return [...updatedListings]
 
         default:

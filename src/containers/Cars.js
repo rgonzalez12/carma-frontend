@@ -27,11 +27,4 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-      fetchCarListings: () => dispatch(fetchCarListings()),
-      addCar: car => dispatch(addCar(car))
-    }
-}
-
 export default connect(mapStateToProps, { fetchCarListings, addCar })(Cars)
