@@ -16,7 +16,8 @@ const CarCard = ({car}) => {
         <h3>Trim</h3>{car.trim}</span> <br />
       <span id="car-specs">
         <h3>Specs and Features</h3>{car.specs_and_features}</span> <br />
-        <h3>Image</h3><img src={car.image} alt="car"></img>
+      <span id="car-image">
+        <h3>Image</h3><img src={car.image} alt="car"></img></span> <br />
       <span id="car-summary">
         <h3>Summary</h3>{car.summary}</span> <br />
       <span id="car-price">

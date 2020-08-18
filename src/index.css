@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.car-card {
+  float: center;
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 0, 0);
+  color: #00ff37;
+  margin:15px;
+  text-align: center;
+  font-family: helvetica;
+}
+
+.new-listing-form {
+
+}
+
+.nav-link {
+}
+
+img {
+  width: 500px;
+  height: auto;
+}

@@ -32,7 +32,8 @@ class NewCar extends Component {
 
     render() {
         return (
-            <form id="new-listing-form" onSubmit={this.handleSubmit}>
+            <div id="new-listing-form">
+            <form id="new-listing" onSubmit={this.handleSubmit}>
             <br /> <br />
             <h3>List Your Car</h3>
             <label>Make</label> <br />
@@ -81,6 +82,7 @@ class NewCar extends Component {
     
             <input type="submit" value="Publish Listing" />
           </form>
+          </div>
         )
     }
 }
