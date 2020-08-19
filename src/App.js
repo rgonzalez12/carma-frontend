@@ -20,6 +20,7 @@ class App extends Component {
            </Switch>
            
         </div>
+        <br></br>
         <Footer />
       </Router>
     )
