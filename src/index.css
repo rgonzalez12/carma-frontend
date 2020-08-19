@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Courier New', Courier, monospace
 }
 
 code {
@@ -12,23 +13,28 @@ code {
     monospace;
 }
 
+h1 {
+  text-align: center;
+}
+
 .car-card {
   float: center;
   width: auto;
   height: auto;
-  background-color: rgb(255, 0, 0);
-  color: #00ff37;
+  background-color:gold;
+  color: black;
   margin:15px;
   text-align: center;
-  font-family: helvetica;
 }
 
-.new-listing-form {
-
-}
-
-.nav-link {
-
+#new-listing-form {
+  float: center;
+  width: auto;
+  height: auto;
+  background-color:gold;
+  color: black;
+  margin:15px;
+  text-align: center;
 }
 
 footer {
@@ -37,6 +43,12 @@ footer {
   color: black;
   position: fixed; 
   bottom: 0; 
+}
+
+header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {

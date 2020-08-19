@@ -10,6 +10,8 @@ const CarCard = ({car}) => {
         <h3>Model</h3>{car.model}</span> <br />
       <span id="car-year">
         <h3>Year</h3>{car.year}</span> <br />
+      <span id="car-mileage">
+        <h3>Mileage</h3>{car.mileage}</span> <br />
       <span id="car-condition">
         <h3>Condition</h3>{car.condition}</span> <br />
       <span id="car-trim">

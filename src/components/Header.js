@@ -2,7 +2,9 @@ import React from 'react'
 
 const Header = () => {
     return (
-       <header>Carma Logo Here</header> 
+       <header>
+           <img src="https://i.imgur.com/51bMpfm.png" alt="carma-logo" />
+           </header> 
     )
 }
 

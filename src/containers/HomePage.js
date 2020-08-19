@@ -6,7 +6,7 @@ class HomePage extends Component {
         return (
             <div id="home-page">
                 <title>Carma</title>
-               <h2>Welcome to Carma! Get enlightened and find your next vehicle!</h2> 
+               <h1>Get enlightened and find your next vehicle!</h1> 
                  <a className="home-page-nav-link" href="/cars">View Current Listings</a> <br />
                  <a className="home-page-nav-link" href="/cars/new">List your Car with Carma!</a> <br />
             </div>

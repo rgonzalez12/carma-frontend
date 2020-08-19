@@ -7,6 +7,7 @@ class NewCar extends Component {
         make: '',
         model: '',
         year: '',
+        mileage: 0,
         condition: '',
         trim: '',
         specs_and_features: '',
@@ -50,6 +51,10 @@ class NewCar extends Component {
             <label>Year</label> <br />
             <input type="text" onChange={this.handleChange} value={this.state.year} name="year"/>
             <br /> <br />
+
+            <label>Mileage</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.mileage} name="mileage"/>
+            <br /> <br />
     
             <label>Condition</label> <br />
             <input type="text" onChange={this.handleChange} value={this.state.condition} name="condition"/>
@@ -72,7 +77,7 @@ class NewCar extends Component {
             <br /> <br />
 
             <label>Price</label> <br />
-            <input type="text" onChange={this.handleChange} value={this.state.price} name="price"/>
+            <input type="text" onChange={this.handleChange} value={this.state.price} name="price" placeholder="$"/>
             <br /> <br />
 
             <label>Listing Owner</label> <br />
@@ -84,6 +89,7 @@ class NewCar extends Component {
             <br /> <br />
     
             <input type="submit" value="Publish Listing" />
+            <br></br>
           </form>
           </div>
         )
