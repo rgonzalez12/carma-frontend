@@ -28,6 +28,12 @@ code {
 }
 
 .nav-link {
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
 }
 
 img {

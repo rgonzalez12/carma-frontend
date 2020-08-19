@@ -26,14 +26,17 @@ class NewCar extends Component {
     handleSubmit = e => {
         e.preventDefault()
         this.props.addCar(this.state)
-        document.getElementById('new-listing-form').reset()
+        document.getElementById('new-listing-form')
         this.props.history.push('/cars')
     }
 
     render() {
         return (
             <div id="new-listing-form">
-            <form id="new-listing" onSubmit={this.handleSubmit}>
+            <form id="new-listing-form" onSubmit={this.handleSubmit}>
+            <br></br>
+            <a className="home-page-nav-link" href="/">Home</a><br></br>
+            <a className="home-page-nav-link" href="/cars">View Current Listings</a>
             <br /> <br />
             <h3>List Your Car</h3>
             <label>Make</label> <br />
