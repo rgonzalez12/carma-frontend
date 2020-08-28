@@ -15,7 +15,7 @@ class Likes extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.handleOnClick}>{this.state.count}Like this Listing</button>
+                <button onClick={this.handleOnClick}>{this.state.count} Like this Listing</button>
             </div>
         )
     }

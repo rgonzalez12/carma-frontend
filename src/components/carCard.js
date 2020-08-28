@@ -1,5 +1,6 @@
 import React from 'react'
 import DeleteCarButton from './DeleteCarButton'
+import Likes from './Likes'
 
 const CarCard = ({car}) => {
   return (
@@ -30,7 +31,7 @@ const CarCard = ({car}) => {
         <h3>Contact Info</h3>{car.contact_info}</span> <br />
         <br></br>
 
-
+      < Likes />
       < DeleteCarButton name="Delete Listing" car={car} />
       <br /><br />
     </div>
